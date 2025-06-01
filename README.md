@@ -1,7 +1,7 @@
 
 # Gitam Timetable Extractor
 
-A lightweight Chrome extension that allows GITAM University students to easily extract their timetable from the G-Student portal. The extracted timetable is exported as a JSON file, which can then be used in the BUNKoo mobile app to load schedules automatically — eliminating the need for manual entry.
+A lightweight Chrome extension that allows GITAM University students to easily extract their timetable from the G-Student portal. The extracted timetable is exported as a JSON file, which can then be used in the BUNKoo mobile app* to load schedules automatically — eliminating the need for manual entry.
 
 ---
 
@@ -74,15 +74,6 @@ Once you download the `gitam_timetable_data.json` file:
 2. Go to the "Import Timetable" section.
 3. Select and upload the JSON file.
 4. Your timetable will now be auto-loaded into the app.
-
----
-
-## 🧪 Local Testing (Optional)
-
-If you don’t have live access to the portal:
-
-1. Open the provided `G-Student.html` sample file in Chrome.
-2. Use the extension as described above to extract and export timetable data.
 
 ---
 
