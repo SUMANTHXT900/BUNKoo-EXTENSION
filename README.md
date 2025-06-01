@@ -1,4 +1,3 @@
-
 # Gitam Timetable Extractor
 
 A lightweight Chrome extension that allows GITAM University students to easily extract their timetable from the G-Student portal. The extracted timetable is exported as a JSON file, which can then be used in the BUNKoo mobile app* to load schedules automatically — eliminating the need for manual entry.
@@ -33,13 +32,15 @@ This tool helps students:
    chrome://extensions/
    ```
 
-3. Enable **Developer mode** (top-right corner).
+3. Enable **Developer mode** by toggling the switch in the top-right corner.
 
-4. Click **Load unpacked**.
+4. Click **Load unpacked** button that appears after enabling Developer mode.
 
-5. Select the folder where this repository was downloaded or cloned.
+5. Navigate to where you downloaded/cloned this repository and **select the `timetable_extractor_extension` folder** (this is important - make sure you select the folder containing the manifest.json file).
 
-6. The extension icon should now appear in your browser’s toolbar.
+6. The extension icon should now appear in your browser's toolbar.
+
+7. To verify installation, click on the Extensions icon (puzzle piece) in Chrome toolbar and check that "Gitam Timetable Extractor" is listed and enabled.
 
 ---
 
@@ -80,12 +81,14 @@ Once you download the `gitam_timetable_data.json` file:
 ## 📂 Repository Structure
 
 ```
-├── popup.html           # Extension popup interface
-├── popup.js             # Extraction logic and UI interaction
-├── manifest.json        # Chrome extension configuration
-├── images/              # Icon assets for the extension
-├── CONTRIBUTING.md      # Contribution guidelines
-├── README.md            # You're reading it
+├── timetable_extractor_extension/  # Main extension folder (select this during installation)
+│   ├── popup.html                  # Extension popup interface
+│   ├── popup.js                    # Extraction logic and UI interaction
+│   ├── manifest.json               # Chrome extension configuration
+│   └── images/                     # Icon assets for the extension
+├── CONTRIBUTING.md                 # Contribution guidelines
+├── README.md                       # You're reading it
+└── LICENSE                         # License information
 ```
 
 ---
@@ -94,6 +97,7 @@ Once you download the `gitam_timetable_data.json` file:
 
 | Issue | Solution |
 |------|----------|
+| Extension not appearing after installation | Make sure you selected the correct `timetable_extractor_extension` folder containing manifest.json |
 | Extension not extracting data | Make sure you're on the **Timetable page** and it's fully loaded |
 | JSON export fails | Refresh the page and try extraction again |
 | BUNKoo import not working | Ensure the exported file is unmodified and has a `.json` extension |
