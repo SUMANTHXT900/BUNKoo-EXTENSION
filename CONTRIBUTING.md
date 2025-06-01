@@ -37,7 +37,5 @@ Feature requests are welcome! Please provide:
 ## Testing
 
 - For the Chrome extension, test on Chrome and other Chromium-based browsers
-- For the Python viewer, test with different timetable data formats
-- Ensure backward compatibility with existing exported data files
 
 Thank you for your contribution! 
